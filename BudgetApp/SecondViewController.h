@@ -11,8 +11,9 @@
 
 @interface SecondViewController : UIViewController
 
+
 @property (weak, nonatomic) IBOutlet UITextField *rentTF;
-@property (weak, nonatomic)IBOutlet UITextField  *utilitiesTF;
+@property (weak, nonatomic) IBOutlet UITextField *utilitiesTF;
 @property (weak, nonatomic) IBOutlet UITextField *groceriesTF;
 @property (weak, nonatomic) IBOutlet UITextField *eatingoutTF;
 @property (weak, nonatomic) IBOutlet UITextField *drinksTF;
@@ -23,7 +24,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *miscellaneousTF;
 
 @property NSInteger sliderValue;
+@property NSInteger expenseVal;
+
 @property (weak, nonatomic) IBOutlet UILabel *Label01;
+@property (weak, nonatomic) IBOutlet UILabel *Label02;
+@property (weak, nonatomic) IBOutlet UILabel *Label03;
+- (IBAction)Action1:(UIButton *)sender;
+
+
 
 @end
 
