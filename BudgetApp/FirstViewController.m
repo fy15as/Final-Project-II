@@ -35,7 +35,7 @@
     if (user == _slider) {
         _sliderLabel.text = [NSString stringWithFormat:@"£%.0f",_slider.value*2000]; //Slider value goes to a maximum of £2000
     }
-    NSLog(@"%f",self.slider.value);
+    NSLog(@"%.0f",self.slider.value);
 }
 
 -(IBAction)stepperValueChanged:(UIStepper *)user

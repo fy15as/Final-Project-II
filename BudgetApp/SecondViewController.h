@@ -12,7 +12,7 @@
 @interface SecondViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *rentTF;
-@property (weak, nonatomic)IBOutlet UITextField *utilitiesTF;
+@property (weak, nonatomic)IBOutlet UITextField  *utilitiesTF;
 @property (weak, nonatomic) IBOutlet UITextField *groceriesTF;
 @property (weak, nonatomic) IBOutlet UITextField *eatingoutTF;
 @property (weak, nonatomic) IBOutlet UITextField *drinksTF;

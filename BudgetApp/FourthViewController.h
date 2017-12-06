@@ -10,6 +10,4 @@
 
 @interface FourthViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *box0;
-
 @end
