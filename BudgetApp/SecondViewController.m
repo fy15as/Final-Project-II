@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.Label01.text = [NSString stringWithFormat:@"%ld",self.sliderValue];
+    self.Label01.text = [NSString stringWithFormat:@"Remaining Budget = £%ld",self.sliderValue];
     NSLog(@"%ld",self.sliderValue);
 }
 

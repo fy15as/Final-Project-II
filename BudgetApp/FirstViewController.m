@@ -67,7 +67,6 @@
         
         controller.sliderValue = self.slider.value;
         
-       //self.sliderV = self.slider.value;
     }
     
 }
