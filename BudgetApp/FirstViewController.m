@@ -46,6 +46,9 @@
     _stepper.value = 0;
 }
 
+- (IBAction)Action0:(UIButton *)sender {
+}
+
 - (int) getCurrentValue {
     
     NSString *stringWithoutPound = [_sliderLabel.text

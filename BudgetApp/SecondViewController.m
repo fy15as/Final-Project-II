@@ -22,7 +22,6 @@
 }
 - (void)viewDidAppear:(BOOL)animated {
     
-    
     self.Label01.text = [NSString stringWithFormat:@"Budget Set : £%ld",self.sliderValue];
     NSLog(@"%ld",self.sliderValue);
 }

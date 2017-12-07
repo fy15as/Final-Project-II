@@ -19,6 +19,7 @@
 
 -(IBAction)sliderValueChanged:(id)user;
 -(IBAction)stepperValueChanged:(UIStepper *)user;
+- (IBAction)Action0:(UIButton *)sender;
 
 @property NSInteger sliderVal;
 
