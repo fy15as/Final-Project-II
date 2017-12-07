@@ -205,11 +205,166 @@
            _drinksbox4.backgroundColor = [UIColor greenColor];
        }
        
-   }
+       self.Label8.text = [NSString stringWithFormat:@"Budget Remaining : £%ld",self.remaining_tickets];
+       NSLog(@"%ld",self.remaining_tickets);
+       
+       if ([self.TVC.ticketsTB2.text floatValue] /[self.SVC.ticketsTF.text intValue] >= 0.25) {
+           
+           _ticketsbox1.backgroundColor = [UIColor redColor];
+           _ticketsbox2.backgroundColor = [UIColor whiteColor];
+           _ticketsbox3.backgroundColor = [UIColor whiteColor];
+           _ticketsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.ticketsTB2.text floatValue] /[self.SVC.ticketsTF.text intValue] >= 0.50) {
+           
+           _ticketsbox1.backgroundColor = [UIColor yellowColor];
+           _ticketsbox2.backgroundColor = [UIColor yellowColor];
+           _ticketsbox3.backgroundColor = [UIColor whiteColor];
+           _ticketsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.ticketsTB2.text floatValue] /[self.SVC.ticketsTF.text intValue] >= 0.75) {
+           
+           _ticketsbox1.backgroundColor = [UIColor greenColor];
+           _ticketsbox2.backgroundColor = [UIColor greenColor];
+           _ticketsbox3.backgroundColor = [UIColor greenColor];
+           _ticketsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.ticketsTB2.text floatValue] /[self.SVC.ticketsTF.text intValue] == 1) {
+           _ticketsbox1.backgroundColor = [UIColor greenColor];
+           _ticketsbox2.backgroundColor = [UIColor greenColor];
+           _ticketsbox3.backgroundColor = [UIColor greenColor];
+           _ticketsbox4.backgroundColor = [UIColor greenColor];
+       }
+       
+       self.Label9.text = [NSString stringWithFormat:@"Budget Remaining : £%ld",self.remaining_subscriptions];
+       NSLog(@"%ld",self.remaining_subscriptions);
+       
+       if ([self.TVC.subscriptionsTB2.text floatValue] /[self.SVC.subscriptionsTF.text intValue] >= 0.25) {
+           
+           _subscriptionsbox1.backgroundColor = [UIColor redColor];
+           _subscriptionsbox2.backgroundColor = [UIColor whiteColor];
+           _subscriptionsbox3.backgroundColor = [UIColor whiteColor];
+           _subscriptionsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.subscriptionsTB2.text floatValue] /[self.SVC.subscriptionsTF.text intValue] >= 0.50) {
+           
+           _subscriptionsbox1.backgroundColor = [UIColor yellowColor];
+           _subscriptionsbox2.backgroundColor = [UIColor yellowColor];
+           _subscriptionsbox3.backgroundColor = [UIColor whiteColor];
+           _subscriptionsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.subscriptionsTB2.text floatValue] /[self.SVC.subscriptionsTF.text intValue] >= 0.75) {
+           
+           _subscriptionsbox1.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox2.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox3.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.subscriptionsTB2.text floatValue] /[self.SVC.subscriptionsTF.text intValue] == 1) {
+           _subscriptionsbox1.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox2.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox3.backgroundColor = [UIColor greenColor];
+           _subscriptionsbox4.backgroundColor = [UIColor greenColor];
+       }
+       
+       self.Label10.text = [NSString stringWithFormat:@"Budget Remaining : £%ld",self.remaining_loanrepayment];
+       NSLog(@"%ld",self.remaining_loanrepayment);
+       
+       if ([self.TVC.loanrepaymentTB2.text floatValue] /[self.SVC.loanrepaymentTF.text intValue] >= 0.25) {
+           
+           _loanrepaymentbox1.backgroundColor = [UIColor redColor];
+           _loanrepaymentbox2.backgroundColor = [UIColor whiteColor];
+           _loanrepaymentbox3.backgroundColor = [UIColor whiteColor];
+           _loanrepaymentbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.loanrepaymentTB2.text floatValue] /[self.SVC.loanrepaymentTF.text intValue] >= 0.50) {
+           
+           _loanrepaymentbox1.backgroundColor = [UIColor yellowColor];
+           _loanrepaymentbox2.backgroundColor = [UIColor yellowColor];
+           _loanrepaymentbox3.backgroundColor = [UIColor whiteColor];
+           _loanrepaymentbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.loanrepaymentTB2.text floatValue] /[self.SVC.loanrepaymentTF.text intValue] >= 0.75) {
+           
+           _loanrepaymentbox1.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox2.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox3.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.loanrepaymentTB2.text floatValue] /[self.SVC.loanrepaymentTF.text intValue] == 1) {
+           _loanrepaymentbox1.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox2.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox3.backgroundColor = [UIColor greenColor];
+           _loanrepaymentbox4.backgroundColor = [UIColor greenColor];
+       }
+       
+       self.Label11.text = [NSString stringWithFormat:@"Budget Remaining : £%ld",self.remaining_transport];
+       NSLog(@"%ld",self.remaining_transport);
+       
+       if ([self.TVC.transportTB2.text floatValue] /[self.SVC.transportTF.text intValue] >= 0.25) {
+           
+           _transportbox1.backgroundColor = [UIColor redColor];
+           _transportbox2.backgroundColor = [UIColor whiteColor];
+           _transportbox3.backgroundColor = [UIColor whiteColor];
+           _transportbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.transportTB2.text floatValue] /[self.SVC.transportTF.text intValue] >= 0.50) {
+           
+           _transportbox1.backgroundColor = [UIColor yellowColor];
+           _transportbox2.backgroundColor = [UIColor yellowColor];
+           _transportbox3.backgroundColor = [UIColor whiteColor];
+           _transportbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.transportTB2.text floatValue] /[self.SVC.transportTF.text intValue] >= 0.75) {
+           
+           _transportbox1.backgroundColor = [UIColor greenColor];
+           _transportbox2.backgroundColor = [UIColor greenColor];
+           _transportbox3.backgroundColor = [UIColor greenColor];
+           _transportbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.transportTB2.text floatValue] /[self.SVC.transportTF.text intValue] == 1) {
+           _transportbox1.backgroundColor = [UIColor greenColor];
+           _transportbox2.backgroundColor = [UIColor greenColor];
+           _transportbox3.backgroundColor = [UIColor greenColor];
+           _transportbox4.backgroundColor = [UIColor greenColor];
+       }
+       
+       self.Label12.text = [NSString stringWithFormat:@"Budget Remaining : £%ld",self.remaining_miscellaneous];
+       NSLog(@"%ld",self.remaining_miscellaneous);
+       
+       if ([self.TVC.miscellaneousTB2.text floatValue] /[self.SVC.miscellaneousTF.text intValue] >= 0.25) {
+           
+           _miscellaneousbox1.backgroundColor = [UIColor redColor];
+           _miscellaneousbox2.backgroundColor = [UIColor whiteColor];
+           _miscellaneousbox3.backgroundColor = [UIColor whiteColor];
+           _miscellaneousbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.miscellaneousTB2.text floatValue] /[self.SVC.miscellaneousTF.text intValue] >= 0.50) {
+           
+           _miscellaneousbox1.backgroundColor = [UIColor yellowColor];
+           _miscellaneousbox2.backgroundColor = [UIColor yellowColor];
+           _miscellaneousbox3.backgroundColor = [UIColor whiteColor];
+           _miscellaneousbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.miscellaneousTB2.text floatValue] /[self.SVC.miscellaneousTF.text intValue] >= 0.75) {
+           
+           _miscellaneousbox1.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox2.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox3.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox4.backgroundColor = [UIColor whiteColor];
+       }
+       else if ([self.TVC.miscellaneousTB2.text floatValue] /[self.SVC.miscellaneousTF.text intValue] == 1) {
+           _miscellaneousbox1.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox2.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox3.backgroundColor = [UIColor greenColor];
+           _miscellaneousbox4.backgroundColor = [UIColor greenColor];
+       }
+ 
+}
+ 
+ 
 
-
-
-    - (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
