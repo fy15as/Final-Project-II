@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1405ABBD1FD9898200115275 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1405ABBC1FD9898200115275 /* FourthViewController.m */; };
 		43C783E11FD71C2B0074C5D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C783E01FD71C2B0074C5D5 /* main.m */; };
 		43C783E41FD71C2B0074C5D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C783E31FD71C2B0074C5D5 /* AppDelegate.m */; };
 		43C783E71FD71C2B0074C5D5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C783E61FD71C2B0074C5D5 /* FirstViewController.m */; };
@@ -17,7 +18,6 @@
 		43C783FD1FD71C2B0074C5D5 /* BudgetAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C783FC1FD71C2B0074C5D5 /* BudgetAppTests.m */; };
 		43C784081FD71C2B0074C5D5 /* BudgetAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C784071FD71C2B0074C5D5 /* BudgetAppUITests.m */; };
 		43C784171FD7234C0074C5D5 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C784161FD7234C0074C5D5 /* ThirdViewController.m */; };
-		43C7841A1FD724F00074C5D5 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C784191FD724F00074C5D5 /* FourthViewController.m */; };
 		43C7841D1FD725670074C5D5 /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C7841C1FD725670074C5D5 /* FifthViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1405ABBB1FD9898200115275 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		1405ABBC1FD9898200115275 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		43C783DC1FD71C2B0074C5D5 /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C783E01FD71C2B0074C5D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43C783E21FD71C2B0074C5D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +61,6 @@
 		43C784091FD71C2B0074C5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C784151FD7234C0074C5D5 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		43C784161FD7234C0074C5D5 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		43C784181FD724F00074C5D5 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		43C784191FD724F00074C5D5 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		43C7841B1FD725670074C5D5 /* FifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthViewController.h; sourceTree = "<group>"; };
 		43C7841C1FD725670074C5D5 /* FifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +121,8 @@
 				43C783E91FD71C2B0074C5D5 /* SecondViewController.m */,
 				43C784151FD7234C0074C5D5 /* ThirdViewController.h */,
 				43C784161FD7234C0074C5D5 /* ThirdViewController.m */,
-				43C784181FD724F00074C5D5 /* FourthViewController.h */,
-				43C784191FD724F00074C5D5 /* FourthViewController.m */,
+				1405ABBB1FD9898200115275 /* FourthViewController.h */,
+				1405ABBC1FD9898200115275 /* FourthViewController.m */,
 				43C7841B1FD725670074C5D5 /* FifthViewController.h */,
 				43C7841C1FD725670074C5D5 /* FifthViewController.m */,
 				43C783EB1FD71C2B0074C5D5 /* Main.storyboard */,
@@ -293,12 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C7841A1FD724F00074C5D5 /* FourthViewController.m in Sources */,
 				43C783EA1FD71C2B0074C5D5 /* SecondViewController.m in Sources */,
 				43C784171FD7234C0074C5D5 /* ThirdViewController.m in Sources */,
 				43C783E41FD71C2B0074C5D5 /* AppDelegate.m in Sources */,
 				43C783E71FD71C2B0074C5D5 /* FirstViewController.m in Sources */,
 				43C7841D1FD725670074C5D5 /* FifthViewController.m in Sources */,
+				1405ABBD1FD9898200115275 /* FourthViewController.m in Sources */,
 				43C783E11FD71C2B0074C5D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +531,7 @@
 				43C7840E1FD71C2B0074C5D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43C7840F1FD71C2B0074C5D5 /* Build configuration list for PBXNativeTarget "BudgetAppTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +540,7 @@
 				43C784111FD71C2B0074C5D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43C784121FD71C2B0074C5D5 /* Build configuration list for PBXNativeTarget "BudgetAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +549,7 @@
 				43C784141FD71C2B0074C5D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
