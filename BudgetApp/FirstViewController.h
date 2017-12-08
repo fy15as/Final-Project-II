@@ -17,11 +17,11 @@
 
 @property (weak, nonatomic) IBOutlet UIStepper *stepper; //Connects stepper from Main.storyboard as IB Outlet
 
--(IBAction)sliderValueChanged:(id)user;
--(IBAction)stepperValueChanged:(UIStepper *)user;
-- (IBAction)Action0:(UIButton *)sender;
+-(IBAction)sliderValueChanged:(id)user; // IB Action that changes slider value
+-(IBAction)stepperValueChanged:(UIStepper *)user; // IB Action that changes stepper value
+- (IBAction)Action0:(UIButton *)sender; // IB Action that sets TOTAL Budget when button is pressed
 
-@property NSInteger sliderVal;
+@property NSInteger sliderVal; // Defined property for slider that sets integers only
 
 @end
 

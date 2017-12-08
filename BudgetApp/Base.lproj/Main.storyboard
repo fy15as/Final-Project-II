@@ -1110,19 +1110,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcH-Pj-jjU">
-                                <frame key="frameInset" minX="142" minY="208" width="165" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syB-SA-98W">
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="changetextfield:" destination="7mD-8A-Nci" eventType="touchUpInside" id="gSP-Qy-DoR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TIPS ON SAVING MONEY. CLICK ON BUTTON TO VIEW!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZPq-iZ-dw0">
+                                <color key="backgroundColor" red="1" green="0.67412374090000005" blue="0.30471972800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips On Saving Money!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyO-Nt-xav">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.67412374086397175" blue="0.30471972803327918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xyO-Nt-xav" firstAttribute="top" secondItem="7D1-du-Ll9" secondAttribute="bottom" constant="92" id="BQO-yv-Sj5"/>
+                            <constraint firstItem="ZPq-iZ-dw0" firstAttribute="top" secondItem="xyO-Nt-xav" secondAttribute="bottom" constant="60" id="Q2G-DG-MP6"/>
+                            <constraint firstItem="syB-SA-98W" firstAttribute="top" secondItem="ZPq-iZ-dw0" secondAttribute="bottom" constant="68" id="dl7-aS-GiT"/>
+                            <constraint firstItem="ZPq-iZ-dw0" firstAttribute="trailing" secondItem="CMS-5e-Zj6" secondAttribute="trailingMargin" id="eGW-S5-BuY"/>
+                            <constraint firstItem="xyO-Nt-xav" firstAttribute="centerX" secondItem="ZPq-iZ-dw0" secondAttribute="centerX" id="ede-nY-Lca"/>
+                            <constraint firstItem="HRS-hf-Vno" firstAttribute="top" secondItem="syB-SA-98W" secondAttribute="bottom" constant="60" id="jRq-d7-Oin"/>
+                            <constraint firstItem="ZPq-iZ-dw0" firstAttribute="leading" secondItem="CMS-5e-Zj6" secondAttribute="leadingMargin" id="s8I-UP-7V4"/>
+                            <constraint firstItem="ZPq-iZ-dw0" firstAttribute="centerX" secondItem="syB-SA-98W" secondAttribute="centerX" id="yjM-yB-viJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tips" id="HEK-3R-oxt"/>
+                    <connections>
+                        <outlet property="FLabel01" destination="ZPq-iZ-dw0" id="3k5-ow-qPj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcR-ND-QW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="-404.34782608695656"/>
+            <point key="canvasLocation" x="-1079" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -1144,7 +1168,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-276" y="-24"/>
         </scene>
     </scenes>
     <resources>
